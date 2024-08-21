@@ -1,0 +1,43 @@
+---
+title: "Key Fellow Data"
+format: 
+  dashboard: 
+    logo: "images/logo.png"
+    orientation: columns
+---
+
+
+```{r}
+#| label: setup
+#| echo: false
+#| include: false
+
+library(tidyverse)
+```
+
+## column {width="35%"}
+
+placeholder text 1
+
+```{r}
+#| label: print starwars 
+head(starwars)
+```
+
+## column {width="65%"}
+
+```{r}
+
+```
+
+### Row {height="25%"%}
+
+placeholder text column 2 row 1
+
+### Row {height="50%"}
+
+placeholder text column 2 row 2
+
+### Row {height="25%"%}
+
+placeholder text column 2 row 3
