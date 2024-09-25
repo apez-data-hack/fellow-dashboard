@@ -1,3 +1,3 @@
 # Placeholder content
 
-This is come text.
+This is some text.
