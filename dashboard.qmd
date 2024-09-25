@@ -13,31 +13,77 @@ format:
 #| include: false
 
 library(tidyverse)
+library(gt)
+library(plotly)
+library(reactable)
+df <- 
+  readRDS("../Cohort Data/all_cohort_data") |> 
+  filter(year==2024) |> 
+  mutate(across(ends_with("_date"), ~as_date(.)))
 ```
 
-## column {width="35%"}
-
-placeholder text 1
+## column 
 
 ```{r}
-#| label: print starwars 
-head(starwars)
+df |> 
+  select(name, site, track, attrition_date) |> 
+  reactable(
+    defaultColDef = colDef(
+    width = 100,  # Set a default width in pixels for all columns
+    style = list(textAlign = "center")), 
+    style = list(color = "blue",
+                 fontSize = "14px"),
+    searchable = TRUE, 
+    showPageSizeOptions = TRUE,
+    pageSizeOptions = c(5, 10, 25, 50), 
+    defaultPageSize = 10)
+
 ```
 
-## column {width="65%"}
 
+## column
+
+Our **2024** Cohort began with `r df |> nrow()` Fellows with `r df |> filter(site=="Boston") |> nrow()` Fellows in Boston and `r df |> filter(site=="New York") |> nrow()` in New York. Currently, there are `r df |> filter(program_status=="in progress") |> nrow()` Fellows still enrolled in the program.
+
+```{r}
+p <- 
+  df |> 
+  filter(!is.na(attrition_date)) |> 
+  ggplot(aes(x = track, 
+             color = attrition_period)) + 
+  geom_point(stat = "count") + 
+  ylim(c(0, 8)) + 
+  labs(title = "Attrition", 
+       x = "Track", 
+       y = "Count", 
+       color = "") + 
+  theme_bw() + 
+  theme(plot.title = element_text(face = "bold"))
+
+ggplotly(p)
+
+
+
+```
+ 
+## column
+ 
+Tell me is there something you'd like to see here?
+ 
+```{r}
+df |> 
+  mutate(row = row_number(), 
+         pl = case_when(row<33 ~ "Bob", row>33 & row<=66 ~ "Karen", TRUE ~ "Sally")) |> 
+  group_by(pl) |> 
+  summarize(count = n(), .groups = "drop") |> 
+  gt() |>
+  tab_options(
+    table.font.size = 10
+  ) |> 
+  opt_interactive()
+```
+ 
 ```{r}
 
 ```
 
-### Row {height="25%"%}
-
-placeholder text column 2 row 1
-
-### Row {height="50%"}
-
-placeholder text column 2 row 2
-
-### Row {height="25%"%}
-
-placeholder text column 2 row 3
