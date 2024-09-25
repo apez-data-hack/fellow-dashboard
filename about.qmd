@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-About this site
+This page is focused on providing application details for the team. 
 
 ```{r}
 1 + 1
