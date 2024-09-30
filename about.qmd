@@ -1,9 +1,0 @@
----
-title: "About"
----
-
-This page is focused on providing application details for the team. 
-
-```{r}
-1 + 1
-```
