@@ -17,7 +17,7 @@ library(gt)
 library(plotly)
 library(reactable)
 df <- 
-  readRDS("../Cohort Data/all_cohort_data") |> 
+  readRDS("all_cohort_data_copy") |> 
   filter(year==2024) |> 
   mutate(across(ends_with("_date"), ~as_date(.)))
 ```
