@@ -2,8 +2,13 @@
 title: "About"
 ---
 
-This is a page
+This website highlights key data from our fellows. 
 
 ```{r}
-1 + 1
+library(tidyverse)
+df <- 
+  readRDS("all_cohort_data_copy") |> 
+  filter(year==2024)
+
+df |> nrow()
 ```

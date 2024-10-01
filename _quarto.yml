@@ -3,10 +3,8 @@ project:
 
 website:
   title: "Fellow Dashboard"
-  sidebar: 
-    contents: 
-      - href: index.qmd
-        text: Home
+  navbar: 
+    left: 
       - href: about.qmd
         text: About
       - href: dashboard.qmd

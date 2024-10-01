@@ -2,9 +2,7 @@
 title: "fellow-dashboard"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Welcome to [Hack.Diversity's](www.hackdiversity.com) internal home page. The purpose of this site and pages is to be enable Hack.Diversity to become a more self-service data organization where Team members can go from ideation, validation, and proposal without needing to go through gatekeepers. 
 
 ```{r}
 1 + 1

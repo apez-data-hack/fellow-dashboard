@@ -1,5 +1,5 @@
 ---
-title: "Key Fellow Data"
+title: "Fellow Dashboard"
 format: 
   dashboard: 
     logo: "images/logo.png"
@@ -15,7 +15,6 @@ format:
 library(tidyverse)
 library(gt)
 library(plotly)
-library(reactable)
 df <- 
   readRDS("all_cohort_data_copy") |> 
   filter(year==2024) |> 
@@ -26,17 +25,11 @@ df <-
 
 ```{r}
 df |> 
-  select(name, site, track, attrition_date) |> 
-  reactable(
-    defaultColDef = colDef(
-    width = 100,  # Set a default width in pixels for all columns
-    style = list(textAlign = "center")), 
-    style = list(color = "blue",
-                 fontSize = "14px"),
-    searchable = TRUE, 
-    showPageSizeOptions = TRUE,
-    pageSizeOptions = c(5, 10, 25, 50), 
-    defaultPageSize = 10)
+  select(name, site, track, company, role) |> 
+  gt() |> 
+  tab_header(title = "2024 Fellows") |> 
+  opt_interactive(use_filters = TRUE, 
+                  use_page_size_select = TRUE)
 
 ```
 
@@ -76,11 +69,16 @@ df |>
          pl = case_when(row<33 ~ "Bob", row>33 & row<=66 ~ "Karen", TRUE ~ "Sally")) |> 
   group_by(pl) |> 
   summarize(count = n(), .groups = "drop") |> 
-  gt() |>
-  tab_options(
-    table.font.size = 10
-  ) |> 
-  opt_interactive()
+  arrange(desc(count)) |> 
+  mutate(ypos = cumsum(count)-0.5*count) |> 
+  ggplot(aes(x="", y=count, fill=pl)) + 
+  geom_bar(stat="identity", width=1, color = "white") +
+  coord_polar("y", start=0) + theme_void() + 
+  geom_text(aes(y = ypos, label = paste0(pl, " - ", count)), color = "white") + 
+  scale_fill_manual(values = c("dodgerblue4", "dodgerblue2", "firebrick2")) + 
+  labs(title = "Breakdown of Fellows by Program Lead") + 
+  theme(plot.title = element_text(hjust = 0.5), 
+        plot.title.position = "plot")
 ```
  
 ```{r}
