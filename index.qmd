@@ -1,9 +1,16 @@
 ---
-title: "fellow-dashboard"
+title: "Home"
 ---
 
-Welcome to [Hack.Diversity's](www.hackdiversity.com) internal home page. The purpose of this site and pages is to be enable Hack.Diversity to become a more self-service data organization where Team members can go from ideation, validation, and proposal without needing to go through gatekeepers. 
+Welcome to [Hack.Diversity's](https://www.hackdiversity.com) internal home page. The purpose of this site and pages is to be enable Hack.Diversity to become a more self-service data organization where Team members can go from ideation, validation, and proposal without needing to go through gatekeepers. 
 
-```{r}
-1 + 1
-```
+Access the following: 
+
+- [Application Data](applications.html) 
+- [Cohort Data](cohorts.html)
+- [Current Fellow Dashboard](dashboard.html)
+- [Partner Dashboard](partner-dash.html)
+
+Please note that this is a new thing and a work in progress. I hope you find the information useful and if you have any comments or suggestions, please share those with me and the whole team [here](https://forms.gle/iRfne1AJM5BpbmV67).
+
+![West Coast is the best coast!](images/Los_Angeles_Lakers_logo.png)

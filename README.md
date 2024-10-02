@@ -1,3 +1,3 @@
 # Placeholder content
 
-This is some text.
+This project focuses on sharing key program information and data with Hack.Team Members. 
