@@ -1,0 +1,48 @@
+---
+title: "Cohorts"
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(plotly)
+library(gt)
+
+df <- 
+  readRDS("all_cohort_data_copy")
+```
+
+
+## Introduction
+
+Hack.Diversity has had `r df |> distinct(year) |> nrow()` program cycles, with its first cohort beginning in `r min(df$year)`. Hack.Diversity has since welcomed over `r df |> nrow()` Fellows into the program with the `r max(df$year)` program welcoming `r df |> filter(year==max(year)) |> nrow()` Fellows with `r df |> filter(year==max(year), site=="Boston") |> nrow()` in **Boston** and `r df |> filter(year==max(year), site=="New York") |> nrow()` in **New York**.
+
+```{r}
+#| label: Cohort Size over the years
+#| echo: false
+
+p <- 
+  df |> 
+  group_by(year, site) |> 
+  summarize(count = n(), 
+            .groups = "drop") |> 
+  ggplot(aes(x = year, y = count, color = site)) +
+  geom_point() + 
+  geom_line() + 
+  scale_color_manual(values = c("dodgerblue4", "firebrick2")) + 
+  scale_x_continuous(breaks = seq(2017, 2024, 1)) + 
+  # geom_text(aes(label = count), color = "black", size = 3, 
+  #           vjust = 1.75) + 
+  labs(x = "Year", 
+       y = "Count", 
+       color = "Site", 
+       title = "Hack.Diversity Fellow Cohort Size") +
+  theme_bw()
+
+ggplotly(p)
+
+
+```
+

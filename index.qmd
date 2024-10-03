@@ -9,8 +9,15 @@ Access the following:
 - [Application Data](applications.html) 
 - [Cohort Data](cohorts.html)
 - [Current Fellow Dashboard](dashboard.html)
-- [Partner Dashboard](partner-dash.html)
+- [Partner Data](partners.html)
 
 Please note that this is a new thing and a work in progress. I hope you find the information useful and if you have any comments or suggestions, please share those with me and the whole team [here](https://forms.gle/iRfne1AJM5BpbmV67).
 
 ![West Coast is the best coast!](images/Los_Angeles_Lakers_logo.png)
+```{r}
+#| label: How to embed a linked figure
+#| include: false
+# ![Boston](https://res.cloudinary.com/simpleview/image/upload/v1635104696/clients/boston/CommAve_KyleKlein_DJI_0290_HDR_0a654884-3024-463e-89f6-5fe4be191303.jpg)
+```
+
+

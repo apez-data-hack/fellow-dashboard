@@ -1,0 +1,27 @@
+---
+title: "Partners at a Glance"
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(plotly)
+library(gt)
+
+df <- 
+  readRDS("all_cohort_data_copy")
+```
+
+```{r}
+#| echo: false
+df |> 
+  distinct(company, year) |> 
+  mutate(hosted = "Yes") |> 
+  pivot_wider(id_cols = company, names_from = year, values_from = hosted, values_fill = "No") |> 
+  gt() |> 
+  tab_header(title = "Host Companies over Time") |> 
+  opt_interactive()
+```
+

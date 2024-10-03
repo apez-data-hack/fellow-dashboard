@@ -2,13 +2,17 @@ project:
   type: website
 
 website:
-  title: "Fellow Dashboard"
+  title: "Hack.Diversity Intranet Homepage"
   navbar: 
     left: 
       - href: about.qmd
         text: About
       - href: dashboard.qmd
-        text: Dashboard
+        text: Fellow Dashboard
+      - href: cohorts.qmd
+        text: Cohort Data
+      - href: partners.qmd
+        text: Partners at a Glance
 
 format:
   html:
