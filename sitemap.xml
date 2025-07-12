@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apez-data-hack.github.io/fellow-dashboard/dashboard.html</loc>
-    <lastmod>2025-07-11T13:27:42.028Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apez-data-hack.github.io/fellow-dashboard/index.html</loc>
-    <lastmod>2025-07-11T13:27:42.031Z</lastmod>
-  </url>
-  <url>
     <loc>https://apez-data-hack.github.io/fellow-dashboard/partners.html</loc>
-    <lastmod>2025-07-11T13:27:42.031Z</lastmod>
+    <lastmod>2025-07-12T13:23:14.669Z</lastmod>
   </url>
   <url>
     <loc>https://apez-data-hack.github.io/fellow-dashboard/cohorts.html</loc>
-    <lastmod>2025-07-11T13:27:42.028Z</lastmod>
+    <lastmod>2025-07-12T13:23:14.666Z</lastmod>
   </url>
   <url>
     <loc>https://apez-data-hack.github.io/fellow-dashboard/about.html</loc>
-    <lastmod>2025-07-11T13:27:42.028Z</lastmod>
+    <lastmod>2025-07-12T13:23:14.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apez-data-hack.github.io/fellow-dashboard/index.html</loc>
+    <lastmod>2025-07-12T13:23:14.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apez-data-hack.github.io/fellow-dashboard/dashboard.html</loc>
+    <lastmod>2025-07-12T13:23:14.666Z</lastmod>
   </url>
 </urlset>
