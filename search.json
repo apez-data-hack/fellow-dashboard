@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "partners.html",
+    "href": "partners.html",
+    "title": "Partners at a Glance",
+    "section": "",
+    "text": "Host Companies over Time"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -26,12 +33,5 @@
     "title": "Cohorts",
     "section": "",
     "text": "Hack.Diversity has had 8 program cycles, with its first cohort beginning in 2017. Hack.Diversity has since welcomed over 644 Fellows into the program with the 2024 program welcoming 105 Fellows with 88 in Boston and 17 in New York."
-  },
-  {
-    "objectID": "partners.html",
-    "href": "partners.html",
-    "title": "Partners at a Glance",
-    "section": "",
-    "text": "Host Companies over Time"
   }
 ]
