@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apez-data-hack.github.io/fellow-dashboard/partners.html</loc>
-    <lastmod>2026-04-09T14:49:51.427Z</lastmod>
-  </url>
-  <url>
     <loc>https://apez-data-hack.github.io/fellow-dashboard/index.html</loc>
-    <lastmod>2026-04-09T14:49:51.427Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apez-data-hack.github.io/fellow-dashboard/about.html</loc>
-    <lastmod>2026-04-09T14:49:51.425Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apez-data-hack.github.io/fellow-dashboard/dashboard.html</loc>
-    <lastmod>2026-04-09T14:49:51.425Z</lastmod>
+    <lastmod>2026-04-10T14:12:44.001Z</lastmod>
   </url>
   <url>
     <loc>https://apez-data-hack.github.io/fellow-dashboard/cohorts.html</loc>
-    <lastmod>2026-04-09T14:49:51.425Z</lastmod>
+    <lastmod>2026-04-10T14:12:43.999Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apez-data-hack.github.io/fellow-dashboard/dashboard.html</loc>
+    <lastmod>2026-04-10T14:12:43.999Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apez-data-hack.github.io/fellow-dashboard/partners.html</loc>
+    <lastmod>2026-04-10T14:12:44.001Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apez-data-hack.github.io/fellow-dashboard/about.html</loc>
+    <lastmod>2026-04-10T14:12:43.999Z</lastmod>
   </url>
 </urlset>
